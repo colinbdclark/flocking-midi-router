@@ -1,0 +1,29 @@
+{
+    "name": "flocking-midi-router",
+    "version": "0.1.0",
+    "main": "index.js",
+    "description": "A MIDI router built using Flocking",
+    "author": "Colin Clark",
+    "homepage": "https://github.com/colinbdclark/flocking-midi-router",
+    "repository": {
+        "type": "git",
+        "url": "git://github.com/colinbdclark/flocking-midi-router.git"
+    },
+    "bugs": "https://github.com/colinbdclark/flocking-midi-router/issues",
+    "license": "MIT",
+    "keywords": [
+        "midi",
+        "webmidi",
+        "music"
+    ],
+    "readmeFilename": "README.md",
+    "devDependencies": {
+        "grunt": "1.0.1",
+        "fluid-grunt-eslint": "18.1.2"
+    },
+    "dependencies": {
+        "infusion": "2.0.0-dev.20161027T155641Z.0bcd507",
+        "flocking": "colinbdclark/flocking#midi-improvements",
+        "minimist": "1.2.0"
+    }
+}
