@@ -1,0 +1,6 @@
+{
+  "type": "flock.midi.router.baseConfig",
+  "options": {
+    "gradeNames": ["flock.midi.router.node"]
+  }
+}

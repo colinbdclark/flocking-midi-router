@@ -18,12 +18,15 @@
     ],
     "readmeFilename": "README.md",
     "devDependencies": {
-        "grunt": "1.0.1",
-        "fluid-grunt-eslint": "18.1.2"
+        "eslint": "3.12.2",
+        "eslint-config-fluid": "1.0.0",
+        "fluid-grunt-eslint": "18.1.2",
+        "grunt": "1.0.1"
     },
     "dependencies": {
-        "infusion": "2.0.0-dev.20161027T155641Z.0bcd507",
         "flocking": "colinbdclark/flocking#midi-improvements",
+        "gpii-launcher": "^1.0.0-dev.20170113T104654Z.903ad25",
+        "infusion": "2.0.0-dev.20161027T155641Z.0bcd507",
         "minimist": "1.2.0"
     }
 }
