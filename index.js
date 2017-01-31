@@ -4,7 +4,7 @@ var fluid = require("infusion");
 var flock = fluid.registerNamespace("flock");
 
 fluid.require("%gpii-launcher");
-require("./require");
+require("./require"); // Trust me, we can't use fluid.require here.  Ask Antranig.
 
 fluid.registerNamespace("flock.midi.router.launcher");
 
