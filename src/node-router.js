@@ -16,7 +16,7 @@ fluid.require("%flocking-midi-router/src/midi-router.js");
 fluid.registerNamespace("flock.midi.router.node");
 
 flock.midi.router.node.startup = function (that) {
-    if (that.options.listPorts) {
+    if (that.options["list-ports"]) {
         flock.midi.logPorts();
         process.exit(0);
     }
