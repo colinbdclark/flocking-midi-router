@@ -8,8 +8,9 @@
 
 "use strict";
 
-var fluid = require("infusion"),
-    flock = fluid.require("flocking"); // eslint-disable-line no-unused-vars
+var fluid = require("infusion");
+
+fluid.require("flocking");
 
 fluid.defaults("flock.midi.router", {
     gradeNames: "fluid.component",

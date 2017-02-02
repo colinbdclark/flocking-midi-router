@@ -1,32 +1,34 @@
 {
-    "name": "flocking-midi-router",
-    "version": "0.1.0",
-    "main": "index.js",
-    "description": "A MIDI router built using Flocking",
-    "author": "Colin Clark",
-    "homepage": "https://github.com/colinbdclark/flocking-midi-router",
-    "repository": {
-        "type": "git",
-        "url": "git://github.com/colinbdclark/flocking-midi-router.git"
-    },
-    "bugs": "https://github.com/colinbdclark/flocking-midi-router/issues",
-    "license": "MIT",
-    "keywords": [
-        "midi",
-        "webmidi",
-        "music"
-    ],
-    "readmeFilename": "README.md",
-    "devDependencies": {
-        "eslint": "3.14.1",
-        "eslint-config-fluid": "1.1.0",
-        "fluid-grunt-eslint": "18.1.2",
-        "grunt": "1.0.1"
-    },
-    "dependencies": {
-        "flocking": "colinbdclark/flocking#midi-improvements",
-        "gpii-launcher": "1.0.0-dev.20170113T104654Z.903ad25",
-        "infusion": "2.0.0",
-        "minimist": "1.2.0"
-    }
+  "name": "flocking-midi-router",
+  "version": "0.1.0",
+  "main": "index.js",
+  "description": "A MIDI router built using Flocking",
+  "author": "Colin Clark",
+  "homepage": "https://github.com/colinbdclark/flocking-midi-router",
+  "bin": "./launcher.js",
+  "repository": {
+    "type": "git",
+    "url": "git://github.com/colinbdclark/flocking-midi-router.git"
+  },
+  "bugs": "https://github.com/colinbdclark/flocking-midi-router/issues",
+  "license": "MIT",
+  "keywords": [
+    "midi",
+    "webmidi",
+    "music"
+  ],
+  "readmeFilename": "README.md",
+  "devDependencies": {
+    "eslint": "3.14.1",
+    "eslint-config-fluid": "1.1.0",
+    "fluid-grunt-eslint": "18.1.2",
+    "grunt": "1.0.1",
+    "grunt-jsonlint": "1.1.0"
+  },
+  "dependencies": {
+    "flocking": "git://github.com/colinbdclark/Flocking.git#256834980a4b1999ab181b1ed0cdea7b7d5da9fd",
+    "gpii-launcher": "1.0.0-dev.20170113T104654Z.903ad25",
+    "infusion": "2.0.0",
+    "minimist": "1.2.0"
+  }
 }

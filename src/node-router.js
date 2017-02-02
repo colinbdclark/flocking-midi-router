@@ -24,12 +24,12 @@ flock.midi.router.node.startup = function (that) {
 
 fluid.defaults("flock.midi.router.node", {
     gradeNames: ["flock.midi.router"],
-    setLogging: fluid.logLevel.FAIL,
+    logLevel:   fluid.logLevel.FAIL,
     listeners: {
         "onCreate.setLogging": {
             priority: "first",
             funcName: "fluid.setLogging",
-            args:     ["{that}.options.setLogging"]
+            args:     ["{that}.options.logLevel"]
         },
         "onCreate.startup": {
             funcName: "flock.midi.router.node.startup",

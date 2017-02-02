@@ -252,14 +252,14 @@ code-point-at@^1.0.0:
   version "1.1.0"
   resolved "https://registry.yarnpkg.com/code-point-at/-/code-point-at-1.1.0.tgz#0d070b4d043a5bea33a2f1a40e2edb3d9a4ccf77"
 
-codemirror-infusion@colinbdclark/codemirror-infusion#gh-6:
+codemirror-infusion@2.1.0:
   version "2.1.0"
-  resolved "https://codeload.github.com/colinbdclark/codemirror-infusion/tar.gz/a332ebe29c8abe83147d24dcbc43934714a85ed8"
+  resolved "https://registry.yarnpkg.com/codemirror-infusion/-/codemirror-infusion-2.1.0.tgz#a4323012e3b5d652695a5c16527377e00b5d512e"
   dependencies:
     codemirror "5.6.0"
-    infusion "2.0.0-dev.20160309T145652Z.9f515ec"
+    infusion "2.0.0-dev.20151211T025229Z.eabb4fc"
     jquery "2.1.4"
-    json5 aseemk/json5#571b17e3341fed12bfd243f91da9921c6337906d
+    json5 "git://github.com/amb26/json5.git#01b0df7202ab41b351da2281b1a94e7d98d8f085"
     jsonlint "1.6.0"
 
 codemirror@5.6.0:
@@ -693,11 +693,11 @@ flat-cache@^1.2.1:
     graceful-fs "^4.1.2"
     write "^0.2.1"
 
-flocking@colinbdclark/flocking#midi-improvements:
+"flocking@git://github.com/colinbdclark/Flocking.git#256834980a4b1999ab181b1ed0cdea7b7d5da9fd":
   version "0.2.0-dev"
-  resolved "https://codeload.github.com/colinbdclark/flocking/tar.gz/8f3674c5cc592aa14e1002734a504fd24ce77b75"
+  resolved "git://github.com/colinbdclark/Flocking.git#256834980a4b1999ab181b1ed0cdea7b7d5da9fd"
   dependencies:
-    codemirror-infusion colinbdclark/codemirror-infusion#gh-6
+    codemirror-infusion "2.1.0"
     dagre "0.7.4"
     infusion "2.0.0-dev.20160519T222603Z.754d2c6"
     jquery "2.1.4"
@@ -853,6 +853,13 @@ grunt-cli@~1.2.0:
     nopt "~3.0.6"
     resolve "~1.1.0"
 
+grunt-jsonlint@1.1.0:
+  version "1.1.0"
+  resolved "https://registry.yarnpkg.com/grunt-jsonlint/-/grunt-jsonlint-1.1.0.tgz#a31ee97240aee3f343ca263c45bd532063127db2"
+  dependencies:
+    jsonlint "1.6.2"
+    strip-json-comments "^2.0.0"
+
 grunt-known-options@~1.1.0:
   version "1.1.0"
   resolved "https://registry.yarnpkg.com/grunt-known-options/-/grunt-known-options-1.1.0.tgz#a4274eeb32fa765da5a7a3b1712617ce3b144149"
@@ -978,9 +985,9 @@ infusion@2.0.0:
   dependencies:
     fluid-resolve "1.2.0"
 
-infusion@2.0.0-dev.20160309T145652Z.9f515ec:
-  version "2.0.0-dev.20160309T145652Z.9f515ec"
-  resolved "https://registry.yarnpkg.com/infusion/-/infusion-2.0.0-dev.20160309T145652Z.9f515ec.tgz#0e5e55530ce1a26930810b54ba7b28f705627f37"
+infusion@2.0.0-dev.20151211T025229Z.eabb4fc:
+  version "2.0.0-dev.20151211T025229Z.eabb4fc"
+  resolved "https://registry.yarnpkg.com/infusion/-/infusion-2.0.0-dev.20151211T025229Z.eabb4fc.tgz#cafe06ff988b3430c965442d61a949b760e54a37"
   dependencies:
     resolve "1.1.6"
 
@@ -1155,9 +1162,9 @@ json5@0.5.0:
   version "0.5.0"
   resolved "https://registry.yarnpkg.com/json5/-/json5-0.5.0.tgz#9b20715b026cbe3778fd769edccd822d8332a5b2"
 
-json5@aseemk/json5#571b17e3341fed12bfd243f91da9921c6337906d:
+"json5@git://github.com/amb26/json5.git#01b0df7202ab41b351da2281b1a94e7d98d8f085":
   version "0.4.0"
-  resolved "https://codeload.github.com/aseemk/json5/tar.gz/571b17e3341fed12bfd243f91da9921c6337906d"
+  resolved "git://github.com/amb26/json5.git#01b0df7202ab41b351da2281b1a94e7d98d8f085"
 
 jsonify@~0.0.0:
   version "0.0.0"
@@ -1166,6 +1173,13 @@ jsonify@~0.0.0:
 jsonlint@1.6.0:
   version "1.6.0"
   resolved "https://registry.yarnpkg.com/jsonlint/-/jsonlint-1.6.0.tgz#88aa46bc289a7ac93bb46cae2d58a187a9bb494a"
+  dependencies:
+    JSV ">= 4.0.x"
+    nomnom ">= 1.5.x"
+
+jsonlint@1.6.2:
+  version "1.6.2"
+  resolved "https://registry.yarnpkg.com/jsonlint/-/jsonlint-1.6.2.tgz#5737045085f55eb455c68b1ff4ebc01bd50e8830"
   dependencies:
     JSV ">= 4.0.x"
     nomnom ">= 1.5.x"
@@ -1615,13 +1629,9 @@ resolve-from@^1.0.0:
   version "1.0.1"
   resolved "https://registry.yarnpkg.com/resolve-from/-/resolve-from-1.0.1.tgz#26cbfe935d1aeeeabb29bc3fe5aeb01e93d44226"
 
-resolve@1.1.6:
+resolve@1.1.6, resolve@1.1.x, resolve@^1.1.6, resolve@~1.1.0:
   version "1.1.6"
   resolved "https://registry.yarnpkg.com/resolve/-/resolve-1.1.6.tgz#d3492ad054ca800f5befa612e61beac1eec98f8f"
-
-resolve@1.1.x, resolve@^1.1.6, resolve@~1.1.0:
-  version "1.1.7"
-  resolved "https://registry.yarnpkg.com/resolve/-/resolve-1.1.7.tgz#203114d82ad2c5ed9e8e0411b3932875e889e97b"
 
 restore-cursor@^1.0.1:
   version "1.0.1"
@@ -1801,13 +1811,13 @@ strip-indent@^1.0.1:
   dependencies:
     get-stdin "^4.0.1"
 
+strip-json-comments@^2.0.0, strip-json-comments@~2.0.1:
+  version "2.0.1"
+  resolved "https://registry.yarnpkg.com/strip-json-comments/-/strip-json-comments-2.0.1.tgz#3c531942e908c2697c0ec344858c286c7ca0a60a"
+
 strip-json-comments@~1.0.1:
   version "1.0.4"
   resolved "https://registry.yarnpkg.com/strip-json-comments/-/strip-json-comments-1.0.4.tgz#1e15fbcac97d3ee99bf2d73b4c656b082bbafb91"
-
-strip-json-comments@~2.0.1:
-  version "2.0.1"
-  resolved "https://registry.yarnpkg.com/strip-json-comments/-/strip-json-comments-2.0.1.tgz#3c531942e908c2697c0ec344858c286c7ca0a60a"
 
 supports-color@^2.0.0:
   version "2.0.0"
