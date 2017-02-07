@@ -106,6 +106,10 @@ async@~0.2.6:
   version "0.2.10"
   resolved "https://registry.yarnpkg.com/async/-/async-0.2.10.tgz#b6bbe0b0674b9d719708ca38de8c237cb526c3d1"
 
+atob@2.0.3:
+  version "2.0.3"
+  resolved "https://registry.yarnpkg.com/atob/-/atob-2.0.3.tgz#19c7a760473774468f20b2d2d03372ad7d4cbf5d"
+
 babel-code-frame@^6.16.0:
   version "6.22.0"
   resolved "https://registry.yarnpkg.com/babel-code-frame/-/babel-code-frame-6.22.0.tgz#027620bee567a88c32561574e7fd0801d33118e4"
@@ -252,19 +256,19 @@ code-point-at@^1.0.0:
   version "1.1.0"
   resolved "https://registry.yarnpkg.com/code-point-at/-/code-point-at-1.1.0.tgz#0d070b4d043a5bea33a2f1a40e2edb3d9a4ccf77"
 
-codemirror-infusion@2.1.0:
-  version "2.1.0"
-  resolved "https://registry.yarnpkg.com/codemirror-infusion/-/codemirror-infusion-2.1.0.tgz#a4323012e3b5d652695a5c16527377e00b5d512e"
+codemirror-infusion@2.2.0:
+  version "2.2.0"
+  resolved "https://registry.yarnpkg.com/codemirror-infusion/-/codemirror-infusion-2.2.0.tgz#5a23ec50eedd673fa1d95060eea52e31331cc5f9"
   dependencies:
-    codemirror "5.6.0"
-    infusion "2.0.0-dev.20151211T025229Z.eabb4fc"
-    jquery "2.1.4"
-    json5 "git://github.com/amb26/json5.git#01b0df7202ab41b351da2281b1a94e7d98d8f085"
-    jsonlint "1.6.0"
+    codemirror "5.21.0"
+    infusion "2.0.0"
+    jquery "3.1.1"
+    json5 "0.5.1"
+    jsonlint "1.6.2"
 
-codemirror@5.6.0:
-  version "5.6.0"
-  resolved "https://registry.yarnpkg.com/codemirror/-/codemirror-5.6.0.tgz#da53d2a03768560d1663ebfb4b3a03523b4c3f4b"
+codemirror@5.21.0:
+  version "5.21.0"
+  resolved "https://registry.yarnpkg.com/codemirror/-/codemirror-5.21.0.tgz#9ec4caeda50807575b2115226bf12414f85d2246"
 
 coffee-script@~1.10.0:
   version "1.10.0"
@@ -693,14 +697,15 @@ flat-cache@^1.2.1:
     graceful-fs "^4.1.2"
     write "^0.2.1"
 
-"flocking@git://github.com/colinbdclark/Flocking.git#256834980a4b1999ab181b1ed0cdea7b7d5da9fd":
-  version "0.2.0-dev"
-  resolved "git://github.com/colinbdclark/Flocking.git#256834980a4b1999ab181b1ed0cdea7b7d5da9fd"
+flocking@0.2.0-dev.20170206T221943Z.fb09a52:
+  version "0.2.0-dev.20170206T221943Z.fb09a52"
+  resolved "https://registry.yarnpkg.com/flocking/-/flocking-0.2.0-dev.20170206T221943Z.fb09a52.tgz#31fd00004eba02796e4f85f7286277673d3ba5a2"
   dependencies:
-    codemirror-infusion "2.1.0"
+    atob "2.0.3"
+    codemirror-infusion "2.2.0"
     dagre "0.7.4"
-    infusion "2.0.0-dev.20160519T222603Z.754d2c6"
-    jquery "2.1.4"
+    infusion "2.0.0"
+    jquery "2.2.4"
     jsplumb "1.7.9"
     normalize.css "3.0.3"
   optionalDependencies:
@@ -825,14 +830,14 @@ globby@^5.0.0:
     pify "^2.0.0"
     pinkie-promise "^2.0.0"
 
-gpii-launcher@1.0.0-dev.20170113T104654Z.903ad25:
-  version "1.0.0-dev.20170113T104654Z.903ad25"
-  resolved "https://registry.yarnpkg.com/gpii-launcher/-/gpii-launcher-1.0.0-dev.20170113T104654Z.903ad25.tgz#14345198f37362ba1d483820e6c0063d67d2f428"
+gpii-launcher@1.0.0-dev.20170207T102054Z.3d7b546:
+  version "1.0.0-dev.20170207T102054Z.3d7b546"
+  resolved "https://registry.yarnpkg.com/gpii-launcher/-/gpii-launcher-1.0.0-dev.20170207T102054Z.3d7b546.tgz#37472f54060f1fefe58d55187e0d5993344fe3de"
   dependencies:
     infusion "2.0.0"
     istanbul "0.4.5"
     kettle "1.3.0"
-    yargs "6.5.0"
+    yargs "6.6.0"
 
 graceful-fs@^4.1.2:
   version "4.1.10"
@@ -985,18 +990,6 @@ infusion@2.0.0:
   dependencies:
     fluid-resolve "1.2.0"
 
-infusion@2.0.0-dev.20151211T025229Z.eabb4fc:
-  version "2.0.0-dev.20151211T025229Z.eabb4fc"
-  resolved "https://registry.yarnpkg.com/infusion/-/infusion-2.0.0-dev.20151211T025229Z.eabb4fc.tgz#cafe06ff988b3430c965442d61a949b760e54a37"
-  dependencies:
-    resolve "1.1.6"
-
-infusion@2.0.0-dev.20160519T222603Z.754d2c6:
-  version "2.0.0-dev.20160519T222603Z.754d2c6"
-  resolved "https://registry.yarnpkg.com/infusion/-/infusion-2.0.0-dev.20160519T222603Z.754d2c6.tgz#c50ecd08d6fb950be98cb2254ace373e3b37f877"
-  dependencies:
-    resolve "1.1.6"
-
 infusion@2.0.0-dev.20161219T170555Z.5778f7e:
   version "2.0.0-dev.20161219T170555Z.5778f7e"
   resolved "https://registry.yarnpkg.com/infusion/-/infusion-2.0.0-dev.20161219T170555Z.5778f7e.tgz#3568b448d1e6c0a491e8ad45d6c592de3b7fd4bf"
@@ -1137,9 +1130,13 @@ istanbul@0.4.5:
     which "^1.1.1"
     wordwrap "^1.0.0"
 
-jquery@2.1.4:
-  version "2.1.4"
-  resolved "https://registry.yarnpkg.com/jquery/-/jquery-2.1.4.tgz#228bde698a0c61431dc2630a6a154f15890d2317"
+jquery@2.2.4:
+  version "2.2.4"
+  resolved "https://registry.yarnpkg.com/jquery/-/jquery-2.2.4.tgz#2c89d6889b5eac522a7eea32c14521559c6cbf02"
+
+jquery@3.1.1:
+  version "3.1.1"
+  resolved "https://registry.yarnpkg.com/jquery/-/jquery-3.1.1.tgz#347c1c21c7e004115e0a4da32cece041fad3c8a3"
 
 js-tokens@^3.0.0:
   version "3.0.0"
@@ -1162,9 +1159,9 @@ json5@0.5.0:
   version "0.5.0"
   resolved "https://registry.yarnpkg.com/json5/-/json5-0.5.0.tgz#9b20715b026cbe3778fd769edccd822d8332a5b2"
 
-"json5@git://github.com/amb26/json5.git#01b0df7202ab41b351da2281b1a94e7d98d8f085":
-  version "0.4.0"
-  resolved "git://github.com/amb26/json5.git#01b0df7202ab41b351da2281b1a94e7d98d8f085"
+json5@0.5.1:
+  version "0.5.1"
+  resolved "https://registry.yarnpkg.com/json5/-/json5-0.5.1.tgz#1eade7acc012034ad84e2396767ead9fa5495821"
 
 jsonify@~0.0.0:
   version "0.0.0"
@@ -1629,7 +1626,7 @@ resolve-from@^1.0.0:
   version "1.0.1"
   resolved "https://registry.yarnpkg.com/resolve-from/-/resolve-from-1.0.1.tgz#26cbfe935d1aeeeabb29bc3fe5aeb01e93d44226"
 
-resolve@1.1.6, resolve@1.1.x, resolve@^1.1.6, resolve@~1.1.0:
+resolve@1.1.x, resolve@^1.1.6, resolve@~1.1.0:
   version "1.1.6"
   resolved "https://registry.yarnpkg.com/resolve/-/resolve-1.1.6.tgz#d3492ad054ca800f5befa612e61beac1eec98f8f"
 
@@ -1948,10 +1945,6 @@ window-size@0.1.0:
   version "0.1.0"
   resolved "https://registry.yarnpkg.com/window-size/-/window-size-0.1.0.tgz#5438cd2ea93b202efa3a19fe8887aee7c94f9c9d"
 
-window-size@^0.2.0:
-  version "0.2.0"
-  resolved "https://registry.yarnpkg.com/window-size/-/window-size-0.2.0.tgz#b4315bb4214a3d7058ebeee892e13fa24d98b075"
-
 wordwrap@0.0.2:
   version "0.0.2"
   resolved "https://registry.yarnpkg.com/wordwrap/-/wordwrap-0.0.2.tgz#b79669bb42ecb409f83d583cad52ca17eaa1643f"
@@ -2002,9 +1995,9 @@ yargs-parser@^4.2.0:
   dependencies:
     camelcase "^3.0.0"
 
-yargs@6.5.0:
-  version "6.5.0"
-  resolved "https://registry.yarnpkg.com/yargs/-/yargs-6.5.0.tgz#a902e23a1f0fe912b2a03f6131b7ed740c9718ff"
+yargs@6.6.0:
+  version "6.6.0"
+  resolved "https://registry.yarnpkg.com/yargs/-/yargs-6.6.0.tgz#782ec21ef403345f830a808ca3d513af56065208"
   dependencies:
     camelcase "^3.0.0"
     cliui "^3.2.0"
@@ -2017,7 +2010,6 @@ yargs@6.5.0:
     set-blocking "^2.0.0"
     string-width "^1.0.2"
     which-module "^1.0.0"
-    window-size "^0.2.0"
     y18n "^3.2.1"
     yargs-parser "^4.2.0"
 
