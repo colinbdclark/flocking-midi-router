@@ -13,13 +13,19 @@ module.exports = function (grunt) {
 
         eslint: {
             all: [
+                "./*.js",
                 "src/**/*.js",
                 "!**/node_modules/**"
             ]
+        },
+        jsonlint: {
+            src: ["src/**/*.json", "./*.json"]
         }
     });
 
     grunt.loadNpmTasks("fluid-grunt-eslint");
+    grunt.loadNpmTasks("grunt-jsonlint");
 
-    grunt.registerTask("default", ["eslint"]);
+    grunt.registerTask("default", ["lint"]);
+    grunt.registerTask("lint", "Apply jshint and jsonlint", ["eslint", "jsonlint"]);
 };

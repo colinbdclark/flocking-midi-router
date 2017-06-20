@@ -8,8 +8,9 @@
 
 "use strict";
 
-var fluid = require("infusion"),
-    flock = fluid.require("flocking");
+var fluid = require("infusion");
+
+fluid.require("flocking");
 
 fluid.defaults("flock.midi.router", {
     gradeNames: "fluid.component",
@@ -32,7 +33,7 @@ fluid.defaults("flock.midi.router.connection", {
     gradeNames: "flock.midi.connection",
 
     sysex: true,
-    openImmediately: true
+    openImmediately: false
 });
 
 fluid.defaults("flock.midi.router.inputConnection", {
