@@ -10,13 +10,17 @@ Before you can use this package, you will need to install its dependencies using
 
 ## Usage
 
-The most basic way to launch the route is using a command like:
+The easiest way to use flocking-midi-router is to install it globally by running `npm install -g flocking-midi-router`.  This will add a command named `flocking-midi-router` to your path.
+
+Alternatively, if the router is installed as a local dependency of your project, you can run:
+
+`node node_modules/.bin/flocking-midi-router`
+
+Or, if you have cloned the repository and want to run it directly, use:
 
 `node launcher.js`
 
-You can also install flocking-midi-router as a global command available in your path by running `npm link` (or `yarn
-link`).  This will add a command named `flocking-midi-router` to your path.  If you launch either variation without any
-arguments (or with the `--help` option), usage information will be displayed.
+If you launch any variation without any arguments (or with the `--help` option), usage information will be displayed.
 
 
 ### Listing Ports
