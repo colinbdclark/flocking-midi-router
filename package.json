@@ -1,9 +1,16 @@
 {
   "name": "flocking-midi-router",
-  "version": "0.1.0",
+  "version": "1.0.0",
   "main": "index.js",
   "description": "A MIDI router built using Flocking",
-  "author": "Colin Clark",
+  "contributors": [
+    {
+      "name": "Colin Clark"
+    },
+    {
+      "name": "Tony Atkins"
+    }
+  ],
   "homepage": "https://github.com/colinbdclark/flocking-midi-router",
   "bin": "./launcher.js",
   "repository": {
