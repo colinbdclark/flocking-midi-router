@@ -18,7 +18,7 @@ Alternatively, if the router is installed as a local dependency of your project,
 
 Or, if you have cloned the repository and want to run it directly, use:
 
-`node node_modules/launcher.js`
+`node launcher.js`
 
 If you launch any variation without any arguments (or with the `--help` option), usage information will be displayed.
 
