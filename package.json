@@ -33,7 +33,7 @@
     "grunt-jsonlint": "1.1.0"
   },
   "dependencies": {
-    "flocking": "0.2.0-dev.20170206T221943Z.fb09a52",
+    "flocking": "1.0.0",
     "gpii-launcher": "1.0.0-dev.20170207T102054Z.3d7b546",
     "infusion": "2.0.0",
     "minimist": "1.2.0"
